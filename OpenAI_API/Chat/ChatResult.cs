@@ -51,6 +51,14 @@ namespace OpenAI_API.Chat
         /// </summary>
         [JsonProperty("finish_reason")]
         public string FinishReason { get; set; }
+
+        public ChatChoiceDelta delta;
+    }
+
+    public class ChatChoiceDelta
+    {
+        public string role;
+        public string content;
     }
 
     /// <summary>
